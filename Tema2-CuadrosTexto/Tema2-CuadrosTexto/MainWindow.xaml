@@ -1,0 +1,21 @@
+﻿<Window x:Class="Tema2_CuadrosTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_CuadrosTexto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="312" Width="388">
+    <Grid>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="50,49,0,0" VerticalAlignment="Top"/>
+        <TextBox KeyDown="edadKeyDown" x:Name="edadTextBox" HorizontalAlignment="Left" Margin="50,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Edad" HorizontalAlignment="Left" Margin="50,185,0,0" VerticalAlignment="Top"/>
+        <Label Content="Apellido" HorizontalAlignment="Left" Margin="50,122,0,0" VerticalAlignment="Top"/>
+        <TextBox KeyDown="nombreKeyDown" x:Name="nombreTextBox" HorizontalAlignment="Left" Margin="50,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox KeyDown="nombreKeyDown" x:Name="apellidoTextBox" HorizontalAlignment="Left" Margin="50,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="nombreLabel" Content="Nombre del cliente" HorizontalAlignment="Left" Margin="215,76,0,0" VerticalAlignment="Top" Foreground="Gray" ScrollViewer.VerticalScrollBarVisibility="Hidden" Visibility="Hidden"/>
+        <Label x:Name="edadLabel" Content="Edad incorrecta" HorizontalAlignment="Left" Margin="215,212,0,0" VerticalAlignment="Top" Foreground="Red" ScrollViewer.VerticalScrollBarVisibility="Hidden" Visibility="Hidden"/>
+        <Label x:Name="apellidoLabel" Content="Apellido del cliente" HorizontalAlignment="Left" Margin="215,149,0,0" VerticalAlignment="Top" Foreground="Gray" ScrollViewer.VerticalScrollBarVisibility="Hidden" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
